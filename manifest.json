@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Go to main page",
+  "version": "1.0",
+  "description": "Home page current site",
+  "icons": {
+    "128": "ico/128.png",
+    "64": "ico/64.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["app.js"]
+	  }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
