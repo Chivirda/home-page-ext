@@ -7,13 +7,22 @@
     "128": "ico/128.png",
     "64": "ico/64.png"
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["app.js"]
-	  }
-  ],
+  "background": {
+    "scripts": ["app.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "ico/128.png"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+H",
+        "mac": "MacCtrl+Shift+H"
+      }
+    }
+  },
   "permissions": [
-    "tabs"
+    "activeTab"
   ]
 }
