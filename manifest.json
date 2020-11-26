@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Go to main page",
-  "version": "1.0",
+  "version": "1.2",
   "description": "Home page current site",
   "icons": {
     "128": "ico/128.png",
